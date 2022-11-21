@@ -2,53 +2,86 @@ document.addEventListener('DOMContentLoaded', () => {
   //card options
   const cardArray = [
     {
-      name: 'fries',
-      img: 'images/fries.png'
+      name: 'batman',
+      img: 'heroes/batman.png'
     },
     {
-      name: 'cheeseburger',
-      img: 'images/cheeseburger.png'
+      name: 'captain_america',
+      img: 'heroes/captain_america.png'
+    },  
+    {
+      name: 'flash',
+      img: 'heroes/flash.png'
+    }, 
+    {
+      name: 'girl_spider',
+      img: 'heroes/girl_spider.png'
+    }, 
+    {
+      name: 'hulk',
+      img: 'heroes/hulk.png'
+    }, 
+    {
+      name: 'iron_man',
+      img: 'heroes/iron_man.png'
+    }, 
+    {
+      name: 'spider_man',
+      img: 'heroes/spider_man.png'
+    }, 
+    {
+      name: 'superman',
+      img: 'heroes/superman.png'
+    }, 
+    {
+      name: 'thor',
+      img: 'heroes/thor.png'
+    }, 
+    {
+      name: 'wonder_woman',
+      img: 'heroes/wonder_woman.png'
+    }, 
+    {
+      name: 'batman',
+      img: 'heroes/batman.png'
     },
     {
-      name: 'ice-cream',
-      img: 'images/ice-cream.png'
-    },
+      name: 'captain_america',
+      img: 'heroes/captain_america.png'
+    },  
     {
-      name: 'pizza',
-      img: 'images/pizza.png'
-    },
+      name: 'flash',
+      img: 'heroes/flash.png'
+    }, 
     {
-      name: 'milkshake',
-      img: 'images/milkshake.png'
-    },
+      name: 'girl_spider',
+      img: 'heroes/girl_spider.png'
+    }, 
     {
-      name: 'hotdog',
-      img: 'images/hotdog.png'
-    },
+      name: 'hulk',
+      img: 'heroes/hulk.png'
+    }, 
     {
-      name: 'fries',
-      img: 'images/fries.png'
-    },
+      name: 'iron_man',
+      img: 'heroes/iron_man.png'
+    }, 
     {
-      name: 'cheeseburger',
-      img: 'images/cheeseburger.png'
-    },
+      name: 'spider_man',
+      img: 'heroes/spider_man.png'
+    }, 
     {
-      name: 'ice-cream',
-      img: 'images/ice-cream.png'
-    },
+      name: 'superman',
+      img: 'heroes/superman.png'
+    }, 
     {
-      name: 'pizza',
-      img: 'images/pizza.png'
-    },
+      name: 'thor',
+      img: 'heroes/thor.png'
+    }, 
     {
-      name: 'milkshake',
-      img: 'images/milkshake.png'
-    },
-    {
-      name: 'hotdog',
-      img: 'images/hotdog.png'
-    }
+      name: 'wonder_woman',
+      img: 'heroes/wonder_woman.png'
+    }, 
+
   ]
 
   cardArray.sort(() => 0.5 - Math.random())
@@ -63,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       const card = document.createElement('img')
-      card.setAttribute('src', 'images/blank.png')
+      card.setAttribute('src', 'heroes/back.png')
       card.setAttribute('data-id', i)
       card.addEventListener('click', flipCard)
       grid.appendChild(card)
@@ -77,8 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const optionTwoId = cardsChosenId[1]
     
     if(optionOneId == optionTwoId) {
-      cards[optionOneId].setAttribute('src', 'images/blank.png')
-      cards[optionTwoId].setAttribute('src', 'images/blank.png')
+      cards[optionOneId].setAttribute('src', 'heroes/back.png')
+      cards[optionTwoId].setAttribute('src', 'heroes/back.png')
       alert('You have clicked the same image!')
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
@@ -89,8 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
       cards[optionTwoId].removeEventListener('click', flipCard)
       cardsWon.push(cardsChosen)
     } else {
-      cards[optionOneId].setAttribute('src', 'images/blank.png')
-      cards[optionTwoId].setAttribute('src', 'images/blank.png')
+      cards[optionOneId].setAttribute('src', 'heroes/back.png')
+      cards[optionTwoId].setAttribute('src', 'heroes/back.png')
       alert('Sorry, try again')
     }
     cardsChosen = []
