@@ -1,1 +1,1 @@
-web: node game.js
+web: npm start
