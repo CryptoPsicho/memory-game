@@ -1,0 +1,22 @@
+{
+  "name": "memory-game",
+  "version": "1.0.0",
+  "description": "memory card games with marvel characters",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CryptoPsicho/memory-game.git"
+  },
+  "author": "CryptoPsicho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CryptoPsicho/memory-game/issues"
+  },
+  "homepage": "https://github.com/CryptoPsicho/memory-game#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
