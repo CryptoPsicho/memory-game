@@ -5,7 +5,7 @@ const port = 3000;
 
 const game = express();
 
-game.use(express.static('/static'));
+game.use(express.static('./static'));
 
 game.get('/', (req,res) => {
     res.sendFile(path.resolve(__dirname, './static/index.html'))
